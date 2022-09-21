@@ -9,6 +9,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import SliderItem from './slider/SliderItem';
+import Categories from './categories/Categories';
+import FeaturedProduct from './featured-products/FeaturedProduct';
 
 const HomePage = () => {
    const sliderItems = [
@@ -51,6 +53,8 @@ const HomePage = () => {
                </SwiperSlide>
             ))}
          </Swiper>
+         <Categories />
+         <FeaturedProduct />
       </Layout>
    );
 };

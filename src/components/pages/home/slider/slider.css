@@ -6,3 +6,13 @@
 .swiper-pagination-bullet-active {
    background: #59ab6e !important;
 }
+
+.swiper-pagination-bullet {
+   width: 30px;
+   border-radius: 10px;
+   height: 5px;
+}
+
+.swiper-pagination {
+   bottom: 40px !important;
+}
