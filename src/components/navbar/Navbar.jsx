@@ -8,6 +8,7 @@ import {
    FaTwitter,
    FaLinkedin,
 } from 'react-icons/fa';
+import MenuItem from './MenuItem';
 
 const Navbar = () => {
    return (
@@ -16,21 +17,21 @@ const Navbar = () => {
          <div className='w-full h-[33%] bg-dark hidden lg:flex justify-between items-center px-24'>
             <div className='w-[240px] h-full flex justify-between'>
                <div className='h-full flex items-center cursor-pointer'>
-                  <FaRegEnvelope className='text-white text-sm' />
-                  <p className='pl-2 text-white text-xs'>mail@domain.com</p>
+                  <FaRegEnvelope className='text-snow text-sm' />
+                  <p className='pl-2 text-snow text-xs'>mail@domain.com</p>
                </div>
                <div className='h-full flex items-center cursor-pointer'>
-                  <AiOutlinePhone className='text-white text-sm' />
-                  <p className='text-white pl-2 flex justify-center items-center text-xs'>
+                  <AiOutlinePhone className='text-snow text-sm' />
+                  <p className='text-snow pl-2 flex justify-center items-center text-xs'>
                      010-020-0340{' '}
                   </p>
                </div>
             </div>
             <div className='w-[90px] h-full flex justify-between items-center'>
-               <FaFacebookF className='text-white cursor-pointer text-xs' />
-               <FaInstagram className='text-white cursor-pointer text-xs' />
-               <FaTwitter className='text-white cursor-pointer text-xs' />
-               <FaLinkedin className='text-white cursor-pointer text-xs' />
+               <FaFacebookF className='text-snow cursor-pointer text-xs' />
+               <FaInstagram className='text-snow cursor-pointer text-xs' />
+               <FaTwitter className='text-snow cursor-pointer text-xs' />
+               <FaLinkedin className='text-snow cursor-pointer text-xs' />
             </div>
          </div>
          {/* end of top nav */}
@@ -40,18 +41,10 @@ const Navbar = () => {
                <h1 className='cursor-pointer'>Zay</h1>
             </div>
             <ul className='w-[36%] h-full flex justify-between items-center'>
-               <li className='text-dark font-normal'>
-                  <a href='#'>Home</a>
-               </li>
-               <li className='text-dark font-normal'>
-                  <a href='#'>About</a>
-               </li>
-               <li className='text-dark font-normal'>
-                  <a href='#'>Shop</a>
-               </li>
-               <li className='text-dark font-normal'>
-                  <a href='#'>Contact</a>
-               </li>
+               <MenuItem>Home</MenuItem>
+               <MenuItem>About</MenuItem>
+               <MenuItem>Shop</MenuItem>
+               <MenuItem>Contact</MenuItem>
             </ul>
             <div className='w-[110px] h-full flex items-center justify-between'>
                <BiSearchAlt2 className='text-xl cursor-pointer' />
